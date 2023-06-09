@@ -17,7 +17,7 @@
 #### 特别说明
 - 跨版本升级时，设备系统会自动比对fingerprint（指纹）属性，从而确定是否正常更新内容，此时如果依然挂载XiaomiCTSPass模块，那么系统更新前后fingerprint（指纹）将完全一致，进而可能导致刷机包中部分更新内容无法更新进设备系统。基于以上理由，每次系统升级后，XiaomiCTSPass模块会自动移除system.prop；更新完开机后，重启一次，即可自动激活XiaomiCTSPass模块，恢复system.prop。注意！这不是XiaomiCTSPass模块的BUG，而是为了保证系统正常稳定升级而有意为之的特性。
 - 若Magisk为非zygisk版，刷完后必须开启magisk hide。
-- 若系统是2021年8月份后的MIUI版本或Magisk为zygisk版，XiaomiCTSPass模块必须搭配~~[Universal SafetyNet Fix模块]~~(https://github.com/kdrag0n/safetynet-fix),原版模块存在一定问题，推荐使用Displax修改后的版本[SafetyNet Fix Mod](https://github.com/Displax/safetynet-fix)使用。
+- 若系统是2021年8月份后的MIUI版本或Magisk为zygisk版，XiaomiCTSPass模块必须搭配~~[Universal SafetyNet Fix模块](https://github.com/kdrag0n/safetynet-fix),~~原版模块存在一定问题，推荐使用Displax修改后的版本[SafetyNet Fix Mod](https://github.com/Displax/safetynet-fix)使用。
 - 禁用或启用XiaomiCTSPass模块时，需重新载入参数，首次开机时间变长属于正常情况。
 
 #### 支持机型
